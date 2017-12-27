@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>宠物相亲</title>
+	</head>
+	<script src="../js/jquery.1.11.3.min.js"></script>
+	<script src="../js/rem.js"></script>
+	<!--<link href="http://static.h-ui.net/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />-->
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		#head{
+			height: 1.4rem;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			background-color: #dc6d65;
+		}
+		.head_nav{
+			width: 20%;
+			line-height: 1.4rem;
+			text-align: center;
+			font-size: 0.4rem;
+			float: left;
+		}
+		.head_name{
+			width: 60%;
+			line-height: 1.4rem;
+			text-align: center;
+			font-size: 0.8rem;
+			float: left;
+		}
+		.head_fabu{
+			width: 20%;
+			line-height: 1.4rem;
+			text-align: center;
+			font-size: 0.4rem;
+			float: left;
+		}
+		#province select {
+			margin-top: 1.5rem;
+			margin-left: 2%;
+			width: 30%;
+			font-size: 0.4rem;
+		}
+	</style>
+	<body>
+		<div id="box">
+			<div id="head">
+				<div class="head_nav">
+					<a href="index.html" rel="external">返回</a>
+				</div>
+				<div class="head_name">
+					<span>宠物相亲</span>
+				</div>
+				<div class="head_fabu">
+					<span>发布</span>
+				</div>
+			</div>
+			<div id="province"></div>
+				
+			</div>
+	</body>
+	<script type="text/javascript" src="http://lib.h-ui.net/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.provincesCity.js"></script>
+	<script type="text/javascript" src="../js/provincesData.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#province").ProvinceCity();
+		})
+	</script>
+</html>

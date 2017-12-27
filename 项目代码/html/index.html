@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>P.E.T主页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<script src="../js/swiper.min.js"></script>
+	<script src="../js/jquery.1.11.3.min.js"></script>
+	<script src="../js/rem.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		#head{
+			height: 1.4rem;
+			width: 100%;
+			z-index: 10;
+			position: fixed;
+			top: 0;
+			background-color: #dc6d65;
+			overflow: hidden;
+		}
+		#head_select{
+			width: 20%;
+			height: 1.4rem;
+			float: left;
+		}
+		#head_select_input{
+			background-color: transparent;
+			border: none;
+			font-size: 0.4rem;
+			float: left;
+			margin-top: 0.5rem;
+			margin-left: 0.5rem;
+		}
+		#head_select img{
+			float: left;
+			margin-top: 0.6rem;
+			height: 0.35rem;
+		}
+		.head_name{
+			width: 60%;
+			height: 1.4rem;
+			text-align: center;
+			margin: 0 auto;
+			float: left;
+		}
+		.head_name span{
+			font-size: 0.8rem;
+			color: #fff;
+		}
+		.head_img{
+			width: 20%;
+			height: 1.4rem;
+			text-align: center;
+			margin: 0 auto;
+			float: left;
+		}
+		.head_img img{
+			height: 0.7rem;
+			width: 0.7rem;
+		}
+		#content{
+			margin-top: 1.4rem;
+		}
+		.swiper-container{
+			height: 5rem;
+			overflow: hidden;
+		}
+		.swiper-slide img{
+			height: 100%;
+			width: 100%;
+		}
+		.content_nav{
+			margin-top: 0.1rem;
+			width: 33%;
+			text-align: center;
+			font-size: 0.3rem;
+			float: left;
+		}
+		.content_nav img{
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+		#foot{
+			height: 1.3rem;
+			width: 100%;
+			background-color: #fff;
+			z-index: 10;
+			position: fixed;
+			bottom: 0;
+			border-top:solid 0.04rem #bebebe;
+		}
+		.foot_nav{
+			padding-top: 0.1rem;
+			width: 20%;
+			font-size: 0.3rem;
+			text-align: center;
+			float: left;
+		}
+		.foot_nav img{
+			height: 0.65rem;
+			width: 0.65rem;
+		}
+		.foot_nav_jiahao{
+			position: absolute;
+			bottom: 0.05rem;
+			width: 20%;
+			text-align: center;
+			float: left;
+		}
+		.foot_nav_jiahao img{
+			height: 1.5rem;
+			width: 1.5rem;
+		}
+	</style>
+	<body>
+		<div id="box">
+			<div id="head">
+				<div id="head_select">
+					<input type="button" id="head_select_input" value="石家庄" />
+					<img src="../images/move_location_icon.png"/>
+				</div>
+				<div class="head_name">
+					<span>P.E.T</span>
+				</div>
+				<div class="head_img">
+					<img src="../images/saoyisao.png"/>
+				</div>
+			</div>
+			<div id="content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../images/gou.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../images/gou01.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../images/gou02.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="../images/haozi.jpg"/>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="index_nav">
+					<a class="content_nav" href="index_sex.html" rel="external">
+						<img src="../images/icon_sex.png"/>
+						<p>宠物相亲</p>
+					</a>
+					<a class="content_nav" href="index_sale.html" rel="external">
+						<img src="../images/icon_found.png"/>
+						<p>宠物招领</p>
+					</a>
+					<a class="content_nav" href="index_buy.html" rel="external">
+						<img src="../images/icon_adopt.png"/>
+						<p>宠物领养</p>
+					</a>
+				</div>
+				<div id="">
+					
+				</div>
+			</div>
+			<div id="foot">
+				<a class="foot_nav" href="index.html" rel="external">
+					<img src="../images/service_select.png"/>
+					<p>首页</p>
+				</a>
+				<a class="foot_nav" href="chat.html" rel="external">
+					<img src="../images/circle_normal.png"/>
+					<p>群聊</p>
+				</a>
+				<a class="foot_nav_jiahao">
+					<img src="../images/jiahao.png"/>
+				</a>
+				<a class="foot_nav" href="mall.html" rel="external">
+					<img src="../images/mall_normal.png"/>
+					<p>商城</p>
+				</a>
+				<a class="foot_nav" href="mine.html" rel="external">
+					<img src="../images/my_normal.png"/>
+					<p>我的</p>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//选择地点定位
+			$(function(){
+				$('#head_select_input').click(function(){
+					$(this).val('秦皇岛');
+				})
+			})
+			//扫一扫按钮点击变化
+			$(function(){
+				$('.head_img>img').click(function(){
+					$('.head_img>img')[0].src = "../images/saoyisao_selecte.png";
+				})
+				$('#foot').click(function(){
+					$('.head_img>img')[0].src = "../images/saoyisao.png"
+				})
+			})
+			//首页轮播图
+			$(function(){
+				var mySwiper = new Swiper('.swiper-container',{
+					loop:true,
+		    		pagination: '.swiper-pagination',
+		    		autoplay:2000
+		  		}) 
+	  		})
+			//底部导航栏点击颜色变化
+	  		$(function(){
+		  		var foot_imgs = document.getElementsByClassName('foot_nav');
+	  			$(foot_imgs[2]).css('margin-left','20%');
+		  		function normal(){
+		  			foot_imgs[0].children[0].src = "../images/service_normal.png";
+		  			foot_imgs[1].children[0].src = "../images/circle_normal.png";
+		  			foot_imgs[2].children[0].src = "../images/mall_normal.png";
+		  			foot_imgs[3].children[0].src = "../images/my_normal.png";
+		  		}
+		  		$('.foot_nav_jiahao>img').click(function(){
+		  			normal();
+		  		})
+		  		foot_imgs[0].onclick = function(){
+		  			normal();
+		  			foot_imgs[0].children[0].src = "../images/service_select.png"
+		  		}
+		  		foot_imgs[1].onclick = function(){
+		  			normal();
+		  			foot_imgs[1].children[0].src = "../images/circle_select.png"
+		  		}
+		  		foot_imgs[2].onclick = function(){
+		  			normal();
+		  			foot_imgs[2].children[0].src = "../images/mall_select.png"
+		  		}
+		  		foot_imgs[3].onclick = function(){
+		  			normal();
+		  			foot_imgs[3].children[0].src = "../images/my_select.png"
+		  		}
+		  	})
+		})
+	</script>
+</html>
