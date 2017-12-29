@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>宠物相亲</title>
 	</head>
 	<script src="../js/jquery.1.11.3.min.js"></script>
 	<script src="../js/rem.js"></script>
-	<!--<link href="http://static.h-ui.net/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />-->
 	<style type="text/css">
 		*{
 			padding: 0;
@@ -22,12 +22,13 @@
 			position: fixed;
 			top: 0;
 			background-color: #dc6d65;
+			border-bottom:solid 0.04rem #bebebe;
 		}
 		.head_nav{
 			width: 20%;
 			line-height: 1.4rem;
 			text-align: center;
-			font-size: 0.4rem;
+			font-size: 0.5rem;
 			float: left;
 		}
 		.head_name{
@@ -41,14 +42,24 @@
 			width: 20%;
 			line-height: 1.4rem;
 			text-align: center;
-			font-size: 0.4rem;
+			font-size: 0.5rem;
 			float: left;
 		}
 		#province select {
 			margin-top: 1.5rem;
-			margin-left: 2%;
-			width: 30%;
+			margin-left: 1%;
+			width: 32%;
+			float: left;
 			font-size: 0.4rem;
+		}
+		#foot{
+			width: 100%;
+			height: 1.4rem;
+			background: #dc6d65;
+			z-index: 10;
+			position: fixed;
+			bottom: 0;
+			border-top:solid 0.04rem #bebebe;
 		}
 	</style>
 	<body>
@@ -64,11 +75,15 @@
 					<span>发布</span>
 				</div>
 			</div>
-			<div id="province"></div>
+			<div id="content">
+				<div id="province"></div>
+					
+				</div>
+			</div>
+			<div id="foot">
 				
 			</div>
 	</body>
-	<script type="text/javascript" src="http://lib.h-ui.net/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.provincesCity.js"></script>
 	<script type="text/javascript" src="../js/provincesData.js"></script>
 	<script type="text/javascript">
