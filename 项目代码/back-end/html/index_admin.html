@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>更改管理员信息</title>
+		<script src="../js/jquery.1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/public_left.css"/>
+		<script src="../js/public_left.js"></script>
+		<style type="text/css">
+			#right{
+				position: relative;
+			}
+			.top_houtai{
+				font-family: "微软雅黑";
+				color: #696969;
+				font-size: 30px;
+				margin-top: 10px;
+				float: left;
+			}
+			.top_mbx{
+				background-color: lightgray;
+				height: 35px;
+				width: 950px;
+				line-height: 35px;
+				float: left;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.top_mbx p{
+				font-family: "微软雅黑";
+				color: #696969;
+			}
+			.right_middle{
+				width: 948px;
+			}
+			.right_middle_touxiang{
+				height: 150px;
+				width: 150px;
+				float: left;
+				margin-top: 50px;
+				margin-left: 100px;
+			}
+			.right_middle_touxiang img{
+				height: 100%;
+				width: 100%;
+				border-radius: 100px;
+			}
+			.right_middle_img{
+				float: left;
+				margin-left: 10px;
+				margin-top: 100px;
+				font-weight: bold;
+				font-size: 20px;
+			}
+			#touxiang_button{
+				float: left;
+				margin-top: 140px;
+				margin-left: -70px;
+				padding: 2px;
+				font-size: 15px;
+			}
+			.right_middle_foot{
+				width: 500px;
+				position: absolute;
+				top: 400px;
+				left: 500px;
+				font-size: 20px;
+			}
+			.right_middle_foot span{
+				margin-top: 30px;
+			}
+			#right_middle_foot_usw{
+				margin-left: 50px;
+				width: 250px;
+				height: 25px;
+			}
+			#right_middle_foot_psw{
+				margin-left: 50px;
+				margin-top: 30px;
+				width: 250px;
+				height: 25px;
+			}
+			#right_middle_foot_psw2{
+				margin-left: 10px;
+				margin-top: 30px;
+				width: 250px;
+				height: 25px;
+			}
+			#usw,#psw{
+				color: red;
+				font-family: "微软雅黑";
+				font-size: 15px;
+				margin-top: 20px;
+			}
+			#right_result{
+				float: left;
+				margin-top: 40px;
+				margin-left: 200px;
+				background-color: slateblue;
+				height: 30px;
+				width: 50px;
+				border-radius: 5px;
+			}
+			.result_tankuang{
+				height: 80px;
+				width: 150px;
+				text-align: center;
+				line-height: 80px;
+				border-radius: 10px;
+				font-size: 25px;
+				position: absolute;
+				top: 400px;
+				left: 48%;
+				background-color: rgba(144,144,144,0.2);
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="left">
+				<div class="left_img">
+					<img src="../img/chushi_img.jpg"/>
+					<div id="left_name">
+						<p>管理员昵称</p>
+						<a href="index_admin.html"><img src="../img/write_fill.png" id="name"/></a>
+					</div>
+				</div>
+				<div class="left_main">
+					<p id="main">Main</p>
+					<a href="../index.html">
+						<img src="../img/service_normal.png"/>
+						<p id="main_p">首页</p>
+					</a>
+				</div>
+				<div class="left_admin">
+					<p id="main">Admin</p>
+					<a href="User_management.html">
+						<img src="../img/my_normal.png"/>
+						<p class="main_p2">用户管理</p>
+					</a>
+					<a href="Content_management.html">
+						<img src="../img/me_sugguest.png"/>
+						<p class="main_p2">内容管理</p>
+					</a>
+					<a href="Message_management.html">
+						<img src="../img/community_light.png" id="p3"/>
+						<p class="main_p2" id="p3">消息管理</p>
+					</a>
+					<a href="Activity_management.html">
+						<img src="../img/me_update.png"/>
+						<p class="main_p2" id="p4">活动管理</p>
+					</a>
+				</div>
+			</div>
+			<div id="right">
+				<div class="right_top">
+					<div class="search">
+						<img src="../img/search.png"/>
+					</div>
+					<input type="search" placeholder="Search" id="right_search">
+					<div class="right_msg">
+						<img src="../img/mail.png"/>
+					</div>
+					<div class="right_tixing">
+						<img src="../img/notice_fill.png"/>
+					</div>
+				</div>
+				<p class="top_houtai">管理员信息修改</p>
+				<div class="top_mbx">
+					<p>后台管理>管理员信息修改</p>
+				</div>
+				<div class="right_middle">
+					<div class="right_middle_touxiang">
+						<img src="../img/chushi_img.jpg" id="img_touxiang"/>
+					</div>
+					<span class="right_middle_img">修改头像</span>
+					<input type="file" id="touxiang_button" value="选择文件" />
+				</div>
+				<div class="right_middle_foot">
+					<span>昵称：</span>
+					<input type="text" id="right_middle_foot_usw" placeholder="昵称名称" />
+					<span id="usw"></span><br/>
+					<span>密码：</span>
+					<input type="password" id="right_middle_foot_psw" placeholder="密码" /><br/>
+					<span>确认密码：</span>
+					<input type="password" id="right_middle_foot_psw2" placeholder="确认密码" />
+					<span id="psw"></span><br/>
+					<input type="button" name="right_result" id="right_result" value="确认" />
+				</div>
+				<div class="result_tankuang">
+					<span>修改成功</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//获取上传头像的路径
+			$(function(){
+				$('#touxiang_button').change(function(){
+					var imgFile = document.getElementById('touxiang_button');
+					var path = window.URL.createObjectURL(imgFile.files[0]);
+					document.getElementById('img_touxiang').src = path;
+					localStorage.setItem('img_path',path);
+				})
+				
+			})
+			//存储用户昵称
+			$(function(){
+				$('#right_result').click(function(){
+					//把更改的用户名存在本地
+					var name = $('#right_middle_foot_usw').val();
+					if(name.length !== 0){
+						localStorage.setItem('userName',name);
+						$('.result_tankuang').css('display','block')
+						setTimeout(function(){$('.result_tankuang').css('display','none')},2000)
+						setTimeout(function(){document.location.href="../index.html"},3000)
+					}
+					
+					if($('#right_middle_foot_psw').val() == $('#right_middle_foot_psw2').val()){
+						if($('#right_middle_foot_psw').val() !== ""){
+							localStorage.setItem('password',$('#right_middle_foot_psw2').val());
+						}
+						$('.result_tankuang').css('display','block')
+						setTimeout(function(){$('.result_tankuang').css('display','none')},2000)
+						setTimeout(function(){document.location.href="../index.html"},3000)
+					}else{
+						$('#psw').html('密码不一致')
+					}
+					//获取localstorage中的昵称
+					$(function(){
+						if(localStorage.getItem('userName') !== null){
+							$('#left_name>p').html(localStorage.getItem('userName'))
+						}else{
+							$('#left_name>p').html('管理员昵称')
+						}
+					})
+				})
+				$('#right_middle_foot_usw').focus(function(){
+					$('#usw').html('');
+				})
+				$('#right_middle_foot_psw2').focus(function(){
+					$('#psw').html('');
+				})
+			})
+			
+		})
+	</script>
+</html>

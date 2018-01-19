@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+html,body{
+	width: 1200px;
+	margin: 0 auto;
+}
+#left {
+	width: 250px;
+	height: 758px;
+	background-color: darkblue;
+	float: left;
+}
+
+.left_img {
+	text-align: center;
+	border-bottom: 2px solid #696969;
+}
+
+.left_img img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	margin-top: 20px;
+}
+
+#left_name {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#left_name p {
+	color: #fff;
+	display: inline-block;
+}
+
+#name {
+	height: 20px;
+	width: 20px;
+	margin: 0;
+	display: inline-block;
+}
+
+.left_main {
+	border-bottom: 2px solid #696969;
+}
+
+#main {
+	color: deepskyblue;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.left_main img {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#main_p {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+}
+
+.left_admin {
+	border-bottom: 2px solid #696969;
+}
+
+.left_admin img {
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.main_p2 {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+#p3 {
+	margin-top: 50px;
+}
+
+#p4 {
+	margin-bottom: 20px;
+}
+.right_top{
+	height: 50px;
+	float: left;
+	width: 948px;
+	border: 1px solid #696969;
+}
+.search{
+	height: 50px;
+	width: 50px;
+	float: left;
+	text-align: center;
+}
+.search img{
+	height: 25px;
+	margin-top: 15px;
+}
+#right_search{
+	height: 50px;
+	width: 795px;
+	float: left;
+	border-top: none;
+	border-bottom: none;
+	border-left: 0.5px solid #696969;
+	border-right: 0.5px solid #696969;
+	padding-left: 15px;
+}
+.right_msg{
+	height: 50px;
+	width: 50px;
+	float: left;
+	text-align: center;
+	border-right: 0.5px solid #696969;
+}
+.right_tixing{
+	height: 50px;
+	width: 50px;
+	float: left;
+	text-align: center;
+}
+.right_msg img,.right_tixing img{
+	margin-top: 15px;
+	height: 25px;
+}
+.top_mbx{
+	background-color: lightgray;
+	height: 35px;
+	width: 950px;
+	line-height: 35px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.top_mbx p{
+	font-family: "微软雅黑";
+	color: #696969;
+}

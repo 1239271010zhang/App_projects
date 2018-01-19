@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>后台主页</title>
+		<script	src="js/jquery.1.11.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/public_left.css"/>
+		<script src="js/public_left.js"></script>
+		<style type="text/css">
+			#main_p{
+				color: dodgerblue;
+			}
+			.middle_img1{
+				height: 340px;
+				width: 900px;
+				border: 4px solid #696969;
+				float: left;
+				margin-left: 25px;
+				margin-top: 20px;
+				overflow: hidden;
+				float: left;
+			}
+			.middle_img1 img{
+				width: 100%;
+				margin-top: 40px;
+			}
+			.middle_img2{
+				height: 300px;
+				width: 450px;
+				margin-left: 25px;
+				margin-top: 20px;
+				float: left;
+			}
+			.middle_img3{
+				height: 300px; 
+				width: 450px;
+				margin-left: 2%;
+				margin-top: 20px;
+				float: left;
+			}
+			.m1{
+				height: 48.5%;
+				width: 48.5%;
+				background-color: slateblue;
+				float: left;
+				text-align: center;
+			}
+			.m2{
+				height: 48.5%;
+				width: 48.5%;
+				margin-left: 3%;
+				background-color: lightskyblue;
+				float: left;
+				text-align: center;
+			}
+			.m3{
+				height: 48.5%;
+				width: 48.5%;
+				margin-top: 3%;
+				background-color: darkseagreen;
+				float: left;
+				text-align: center;
+			}
+			.m4{
+				height: 48.5%;
+				width: 48.5%;
+				margin-left: 3%;
+				margin-top: 3%;
+				background-color: deepskyblue;
+				float: left;
+				text-align: center;
+			}
+			.m5{
+				height: 35%;
+				width: 100%;
+				margin-top: 6%;
+				background-color: yellow;
+				position: relative;
+			}
+			.m6{
+				height: 35%;
+				width: 100%;
+				margin-top: 6%;
+				background-color: purple;
+				position: relative;
+			}
+			.m1,.m2,.m3,.m4{
+				position: relative;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			.m1 p,.m2 p,.m3 p,.m4 p{
+				position: absolute;
+		        top: 50%;
+		        left: 50%;
+		        transform: translateY(-50%);
+		        transform: translateX(-50%);
+			}
+			.m5_footer{
+				height: 30px;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				background-color: rgba(144,144,144,0.4);
+				text-align: center;
+				line-height: 30px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			#middle_img2_mbx{
+				height: 20px;
+				width: 50px;
+				float: right;
+				margin-top: 15px;
+			}
+			#middle_mbx{
+				height: 2px;
+				width: 20px;
+				margin-top: 2px;
+				background-color: #fff;
+			}
+			.m5_img{
+				height: 45px;
+				width: 45px;
+				margin-top: 20px;
+				margin-left: 40px;
+				float: left;
+			}
+			.m5_img img{
+				height: 100%;
+				width: 100%;
+			}
+			.m5_span{
+				height: 50px;
+				width:  100px;
+				float: left;
+				margin-top: 20px;
+				position: absolute;
+				right: 40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="left">
+				<div class="left_img">
+					<img src="img/chushi_img.jpg"/>
+					<div id="left_name">
+						<p>管理员昵称</p>
+						<a href="html/index_admin.html"><img src="img/write.png" id="name"/></a>
+					</div>
+				</div>
+				<div class="left_main">
+					<p id="main">Main</p>
+					<a href="index.html">
+						<img src="img/home_fill_light.png"/>
+						<p id="main_p">首页</p>
+					</a>
+				</div>
+				<div class="left_admin">
+					<p id="main">Admin</p>
+					<a href="html/User_management.html">
+						<img src="img/my_normal.png"/>
+						<p class="main_p2">用户管理</p>
+					</a>
+					<a href="html/Content_management.html">
+						<img src="img/me_sugguest.png"/>
+						<p class="main_p2">内容管理</p>
+					</a>
+					<a href="html/Message_management.html">
+						<img src="img/community_light.png" id="p3"/>
+						<p class="main_p2" id="p3">消息管理</p>
+					</a>
+					<a href="html/Activity_management.html">
+						<img src="img/me_update.png"/>
+						<p class="main_p2" id="p4">活动管理</p>
+					</a>
+				</div>
+			</div>
+			<div id="right">
+				<div class="right_top">
+					<div class="search">
+						<img src="img/search.png"/>
+					</div>
+					<input type="search" placeholder="Search" id="right_search">
+					<div class="right_msg">
+						<a href=""><img src="img/mail.png"/></a>
+					</div>
+					<div class="right_tixing">
+						<a href="#"><img src="img/notice_fill.png"/></a>
+					</div>
+				</div>
+				<div class="right_middle">
+					<div class="middle_img1">
+						<a href=""><img src="img/dogs.jpg"/></a>
+					</div>
+					<div class="middle_img2">
+						<a href="html/User_management.html" rel="external" class="m1">
+							<div id="middle_img2_mbx">
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+							</div>
+							<p>用户管理</p>
+						</a>
+						<a href="html/Content_management.html" rel="external" class="m2">
+							<div id="middle_img2_mbx">
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+							</div>
+							<p>内容管理</p>
+						</a>
+						<a href="html/Message_management.html" rel="external" class="m3">
+							<div id="middle_img2_mbx">
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+							</div>
+							<p>消息管理</p>
+						</a>
+						<a href="html/Activity_management.html" rel="external" class="m4">
+							<div id="middle_img2_mbx">
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+								<div id="middle_mbx"></div>
+							</div>
+							<p>活动管理</p>
+						</a>
+					</div>
+					<div class="middle_img3">
+						<div class="m5">
+							<div class="m5_img">
+								<img src="img/mail.png"/>
+							</div>
+							<div class="m5_span">
+								<span id="m5_span">1234</span>
+								<span>条</span>
+								<p>邮件</p>
+							</div>
+							<div class="m5_footer">
+								<a href="#">查看更多</a>
+							</div>
+						</div>
+						<div class="m6">
+							<div class="m5_img">
+								<img src="img/notice_fill.png"/>
+							</div>
+							<div class="m5_span">
+								<span id="m6_span">123</span>
+								<span>条</span>
+								<p>消息</p>
+							</div>
+							<div class="m5_footer">
+								<a href="#">查看更多</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//首页四栏导航滑动效果
+			$(function(){
+				$('.m1').on({
+					'mouseover':function(){
+						$(this).css('font-size','larger');
+					},
+					'mouseout':function(){
+						$(this).css('font-size','15px')
+					}
+				})
+				$('.m2').on({
+					'mouseover':function(){
+						$(this).css('font-size','larger');
+					},
+					'mouseout':function(){
+						$(this).css('font-size','15px')
+					}
+				})
+				$('.m3').on({
+					'mouseover':function(){
+						$(this).css('font-size','larger');
+					},
+					'mouseout':function(){
+						$(this).css('font-size','15px')
+					}
+				})
+				$('.m4').on({
+					'mouseover':function(){
+						$(this).css('font-size','larger');
+					},
+					'mouseout':function(){
+						$(this).css('font-size','15px')
+					}
+				})
+				$('.m5_footer').on({
+					'mouseover':function(){
+						$(this).css('font-size','larger');
+					},
+					'mouseout':function(){
+						$(this).css('font-size','15px')
+					}
+				})
+			})
+			//获取上传头像
+			$(function(){
+				var path = localStorage.getItem('img_path');
+				var img = $('.left_img>img')[0];
+				if(path !== null){
+					img.src = path;
+				}else{
+					img.src = "img/chushi_img.jpg";
+				}
+			})
+		})
+		
+	</script>
+</html>
