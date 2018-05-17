@@ -1,0 +1,235 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+#admin-app{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 100%;
+}
+
+/*Login*/
+.login{
+	margin: 0 auto;
+	text-align: center;
+	width: 420px;
+	position: relative;
+	top: 200px;
+	background-color: white;
+	font-size: 14px;
+	border: 1px solid #c2c2c2;
+}
+.login i{
+	color: red;
+}
+.login h1{
+	font-size: 26px;
+	font-weight: 400;
+	padding: 32px 0 32px 0;
+}
+.login input{
+	height: 38px;
+	width: 210px;
+	border: 1px solid #e6e6e6;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	outline: none;
+}
+input[type="submit"],input[type="button"]{
+	margin-bottom: 32px;
+	height: 38px;
+	width: 100px;
+	padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Header*/
+.admin-app-header{
+	height: 65px;
+	line-height: 65px;
+	background-color: white;
+	border-bottom: 5px solid #009688;
+	padding: 0 15px;
+}
+.admin-app-header .title{
+	width: 180px;
+}
+.admin-app-header .title a{
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	background-color: #1AA094;
+	position: absolute;
+	left: 220px;
+	top: 16px;
+}
+.admin-app-header .title a:hover{
+	cursor:pointer;
+	background-color: forestgreen;
+}
+.admin-app-header .title h1{
+	font-size: 22px;
+	font-weight: 400;
+}
+.admin-app-header .title h1:hover{
+	color: gray;
+}
+.admin-app-header .account{
+	position: absolute;
+	right: 10px;
+	width: 142px;
+	height: 120px;
+	top: 0px;
+	color: gray;
+	z-index: 10;
+}
+.admin-app-header .account_menu:hover{
+	cursor:pointer;
+	color: black;
+}
+.admin-app-header .account .logo{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.admin-app-header .submenu{
+	line-height: 50px;
+	border: 1px solid #d2d2d2;
+	border-top: 5px solid black;
+	color: lightgray;
+	display: none;
+}
+.admin-app-header .submenu:hover{
+	color: black;
+	background-color: #F2F2F2;
+}
+.admin-app-header .submenu i{
+	padding-left: 25px;
+}
+
+/*Menu*/
+.admin-app-menu{
+	position: absolute;
+	top: 70px;
+	bottom: 0;
+	width: 200px;
+	background-color: #393D49;
+	color: #c2c2c2;
+	font-size: 14px;
+}
+.admin-app-menu .menu-bar{
+	height: 45px;
+	line-height: 45px;
+	padding-left: 20px;
+	border-left: 5px solid#393D49;
+	cursor:pointer;
+}
+.admin-app-menu .menu-bar:hover{
+	border-left: 5px solid#009688;
+	background-color: #4e5465;
+}
+.admin-app-menu .menu-bar span{
+	display: inline-block;
+	width: 120px;
+	padding-left: 10px;
+}
+.admin-app-menu .item:hover{
+	color: white;
+	background-color: #4e5465;
+}
+.admin-app-menu .menu-items{
+	cursor:pointer;
+	display: none;
+}
+.admin-app-menu .menu-items .item{
+	line-height: 40px;
+	margin-left: 50px;
+}
+
+/*Stage*/
+.admin-app-stage{
+	position: absolute;
+	top: 70px;
+	left: 200px;
+	bottom: 36px;
+	right: 0;
+	background-color: white;
+}
+.mbx{
+	background-color: #c4c4c4;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+}
+.change-password-panel {
+  width: 300px;
+  margin: 50px auto;
+}
+.change-password-panel input {
+  height: 36px;
+  width: 240px;
+  margin: 5px 0;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #d2d2d2;
+}
+.change-password-panel input[type="submit"] {
+  background: #009688;
+  color: white;
+  width: 70px;
+  height: 38px;
+  padding: 0;
+  cursor: pointer;
+}
+.change-password-panel input[type="submit"]:hover {
+  background: #56A398;
+}
+.change-password-panel input[type="reset"] {
+  background: white;
+  color: #555;
+  width: 70px;
+  height: 38px;
+  padding: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.change-password-panel input[type="reset"]:hover {
+  border: 1px solid #009688;
+  color: black;
+}
+#table{
+	border-collapse: collapse; 
+	margin: 10px auto;
+}
+#table th,#table td{
+	text-align: center;
+	border: 1px solid #000; 
+	width: 100px;
+	height: 40px;
+}
+#table button{
+	padding: 5px 10px;
+}
+
+/*Footer*/
+.admin-app-footer{
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+	right: 0;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #E6E6E6;
+}

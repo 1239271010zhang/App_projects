@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>头部</title>
+	</head>
+	<!--<link rel="stylesheet" type="text/css" href="css/header.css"/>-->
+	<link rel="stylesheet" type="text/css" href="../css/c-layout.css"/>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../js/config.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_610077_vo93jus1euoqd7vi.css"/>
+	<body>
+		<div class="admin-app-header">
+			
+			<!--<span>匠人牛品集团后台</span>
+			<span id="header-mbx">
+				<div style="margin-top: 10px;"></div>
+				<div></div>
+				<div></div>
+			</span>
+			<span class="header-right">
+				<span>管理</span>
+			</span>-->
+			
+			<div class="title">
+				<h1>匠人牛品集团后台</h1>
+				
+			</div>
+			
+			<div class="acount">
+				<div class="logo"></div>
+				<span>管理</span>
+				<i class="iconfont icon-arrowdown" id="i1"></i>
+				<div class="submenu">
+					<i class="iconfont icon-sn-none"></i>
+					<span>注销</span>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var $title = $('.title h1'),
+				$logo = $('.acount .logo');
+			$title.html(app.config.headerTitle);
+			$logo.css('background','url('+app.config.headerLogo+')');
+			
+			var $account = $('.acount'),
+			$menu = $('.submenu'),
+			$arrow = $('#i1')
+			
+			$account.mouseover(function(){
+				$menu.css('display','block');
+				$arrow.removeClass('icon-arrowdown');
+				$arrow.addClass('icon-arrowup');
+				
+			});
+			$account.mouseout(function(){
+				$menu.css('display','none');
+				$arrow.removeClass('icon-arrowup');
+				$arrow.addClass('icon-arrowdown');
+			});
+			$menu.click(function(){
+				
+			})
+		})
+		
+	</script>
+</html>

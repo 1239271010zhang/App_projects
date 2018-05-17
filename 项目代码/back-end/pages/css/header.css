@@ -1,0 +1,40 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+#admin-app{
+	width: auto;
+	height: 65px;
+	line-height: 65px;
+    border-bottom: 5px solid #009688;
+    font-size: 22px;
+    position: relative;
+    padding: 0 15px;
+}
+#header-mbx{
+	background-color: #009688;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	position: absolute;
+	left: 215px;
+	top: 17px;
+}
+#header-mbx div{
+	width: 15px;
+	height: 2px;
+	border: none;
+	background-color: white;
+	margin: auto;
+	margin-top: 2px;
+}
+.header-right{
+	float: right;
+	margin-right: 30px;
+	font-size: 14px;
+	color: #999;
+}

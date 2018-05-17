@@ -1,0 +1,56 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+#admin-app{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 100%;
+}
+.login{
+	margin: 0 auto;
+	text-align: center;
+	width: 420px;
+	position: relative;
+	top: 200px;
+	background-color: white;
+	font-size: 14px;
+	border: 1px solid #c2c2c2;
+}
+.login h1{
+	font-size: 26px;
+	font-weight: 400;
+	padding: 32px 0 32px 0;
+}
+.login input{
+	height: 38px;
+	width: 210px;
+	border: 1px solid #e6e6e6;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	outline: none;
+}
+input[type="submit"]{
+	margin-bottom: 32px;
+	height: 38px;
+	width: 100px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+}
+/*#inp-yzm{
+	width: 80px;
+	float: left;
+}
+#img-yzm{
+	width:100px;
+	height:40px;
+	display: inline-block;
+	float:right;
+}*/
